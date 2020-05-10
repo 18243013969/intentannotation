@@ -8,8 +8,6 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 
-import org.checkerframework.checker.units.qual.C;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -214,7 +212,7 @@ public class ProxyInfo {
         } else {
             return str.substring(0, 1)
                     .toUpperCase()
-                    .concat(str.substring(1));
+                    .concat(str.substring(1));//concat 通过arraycopy实现，性能更好
 
         }
     }

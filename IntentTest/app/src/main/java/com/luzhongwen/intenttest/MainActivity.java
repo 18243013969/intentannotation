@@ -1,6 +1,5 @@
 package com.luzhongwen.intenttest;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.luzhongwen.intentannotation.Optional;
