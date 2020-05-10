@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dps.javapoet
+    compileOnly dps.autoservice
+    annotationProcessor dps.autoservice
+    implementation  'com.google.auto:auto-common:0.10'
+
+    implementation project(':intentannotation')
+}
+sourceCompatibility = dps.sourceCompatibility
+targetCompatibility = dps.targetCompatibility
